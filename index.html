@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/odp-master-lp-stylesheet.css" />
+
+	<title>ODP Business Solutions</title>
+	<!--Marketo Syntax-->
+	<meta class="mktoBoolean" id="instructionShow" mktoName="Modules Instruction - Visibility" default="true" true_value="show-instruction"
+		false_value="" false_value_name="Hide" true_value_name="Show">
+	<!--Hero Sections-->
+	<meta class="mktoBoolean" id="hero1Show" mktoName="Hero #1 - Visibility" default="true" true_value="flex"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="hero1BGImage" mktoName="Hero #1 Banner Image - Visibility"
+		default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-hero-img-1.png" allowHtml="false">
+	<meta class="mktoString" id="hero1Order" mktoName="Hero #1 - Order" default="">
+
+	<meta class="mktoBoolean" id="hero2Show" mktoName="Hero #2 - Visibility" default="true" true_value="flex"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="hero2BGImage" mktoName="Hero #2 Banner Image - Visibility"
+		default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-hero-img-2.png" allowHtml="false">
+	<meta class="mktoString" id="hero2Order" mktoName="Hero #2 - Order" default="">
+
+	<meta class="mktoBoolean" id="hero3Show" mktoName="Hero #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="hero3Order" mktoName="Hero #3 - Order" default="">
+	<meta class="mktoString" id="hero3BGColor" mktoName="Hero #3 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="hero4Show" mktoName="Hero #4 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="hero4Order" mktoName="Hero #4 - Order" default="">
+	<meta class="mktoString" id="hero4BGColor" mktoName="Hero #4 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="hero5Show" mktoName="Hero #5 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="hero5Order" mktoName="Hero #5 - Order" default="">
+	<meta class="mktoString" id="hero5BGColor" mktoName="Hero #5 - Background Color" default="#f0f0f0">
+	<!--Copy Sections-->
+	<meta class="mktoBoolean" id="copy1Show" mktoName="Copy #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="copy1Order" mktoName="Copy #1 - Order" default="">
+	<meta class="mktoString" id="copy1BGColor" mktoName="Copy #1 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="copy2Show" mktoName="Copy #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="copy2Order" mktoName="Copy #2 - Order" default="">
+	<meta class="mktoString" id="copy2BGColor" mktoName="Copy #2 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="copy3Show" mktoName="Copy #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="copy3Order" mktoName="Copy #3 - Order" default="">
+	<meta class="mktoString" id="copy3BGColor" mktoName="Copy #3 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="copy4Show" mktoName="Copy #4 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="copy4Order" mktoName="Copy #4 - Order" default="">
+	<meta class="mktoString" id="copy4BGColor" mktoName="Copy #4 - Background Color" default="#ffffff">
+	<!--Featured Sections-->
+	<meta class="mktoBoolean" id="featured1Show" mktoName="Featured #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="featured1Order" mktoName="Featured #1 - Order" default="">
+	<meta class="mktoString" id="featured1BGColor" mktoName="Featured #1 - Background Color" default="#F0F0F0">
+
+	<meta class="mktoBoolean" id="featured2Show" mktoName="Featured #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="featured2Order" mktoName="Featured #2 - Order" default="">
+	<meta class="mktoString" id="featured2BGColor" mktoName="Featured #2 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="featured3Show" mktoName="Featured #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="featured3Order" mktoName="Featured #3 - Order" default="">
+	<meta class="mktoString" id="featured3BGColor" mktoName="Featured #3 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="featured4Show" mktoName="Featured #4 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="featured4Order" mktoName="Featured #4 - Order" default="">
+	<meta class="mktoString" id="featured4BGColor" mktoName="Featured #4 - Background Color" default="#ffffff">
+	<meta class="mktoString" id="featured4BGImage" mktoName="Featured #4 - Background Image" default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-article-img-3.png">
+	<!--Key Features Sections-->
+	<meta class="mktoBoolean" id="keyFeatures1Show" mktoName="Key Features #1 - Visibility" default="true"
+		true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="keyFeatures1Order" mktoName="Key Features #1 - Order" default="">
+	<meta class="mktoString" id="keyFeatures1BGColor" mktoName="Key Features #1 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="keyFeatures2Show" mktoName="Key Features #2 - Visibility" default="true"
+		true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="keyFeatures2Order" mktoName="Key Features #2 - Order" default="">
+	<meta class="mktoString" id="keyFeatures2BGColor" mktoName="Key Features #2 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="keyFeatures3Show" mktoName="Key Features #3 - Visibility" default="true"
+		true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="keyFeatures3Order" mktoName="Key Features #3 - Order" default="">
+	<meta class="mktoString" id="keyFeatures3BGColor" mktoName="Key Features #3 - Background Color" default="#F0F0F0">
+
+	<meta class="mktoBoolean" id="keyFeatures4Show" mktoName="Key Features #4 - Visibility" default="true"
+		true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="keyFeatures4Order" mktoName="Key Features #4 - Order" default="">
+	<meta class="mktoString" id="keyFeatures4BGColor" mktoName="Key Features #4 - Background Color" default="#ffffff">
+	
+
+	<!--Images Sections-->
+	<meta class="mktoBoolean" id="image1Show" mktoName="Image #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="image1Order" mktoName="Image #1 - Order" default="">
+	<meta class="mktoString" id="image1BGColor" mktoName="Image #1 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="image2Show" mktoName="Image #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="image2Order" mktoName="Image #2 - Order" default="">
+	<meta class="mktoString" id="image2BGColor" mktoName="Image #2 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="image3Show" mktoName="Image #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="image3Order" mktoName="Image #3 - Order" default="">
+	<meta class="mktoString" id="image3BGColor" mktoName="Image #3 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="image4Show" mktoName="Image #4 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="image4Order" mktoName="Image #4 - Order" default="">
+	<meta class="mktoString" id="image4BGColor" mktoName="Image #4 - Background Color" default="#ffffff">
+	
+	<meta class="mktoBoolean" id="image5Show" mktoName="Image #5 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="image5Order" mktoName="Image #5 - Order" default="">
+	<meta class="mktoString" id="image5BGColor" mktoName="Image #5 - Background Color" default="#ffffff">
+	<meta class="mktoString" id="image5BGImage" mktoName="Image #5 - Background Image" default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-hero-img-1.png">
+
+	<meta class="mktoBoolean" id="image6Show" mktoName="Image #6 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="image6Order" mktoName="Image #6 - Order" default="">
+	<meta class="mktoString" id="image6BGColor" mktoName="Image #6 - Background Color" default="#ffffff">
+	<meta class="mktoString" id="image6BGImage" mktoName="Image #6 - Background Image" default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-2.png">
+
+	<meta class="mktoBoolean" id="image7Show" mktoName="Image #7 - Visibility" default="true" true_value="flex"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="image7Order" mktoName="Image #7 - Order" default="">
+	<meta class="mktoString" id="image7BGColor" mktoName="Image #7 - Background Color" default="#ffffff">
+	<meta class="mktoString" id="image7BGImage" mktoName="Image #7 - Background Image" default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-5.png">
+
+	<meta class="mktoBoolean" id="image8Show" mktoName="Image #8 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="image8Order" mktoName="Image #8 - Order" default="">
+	<meta class="mktoString" id="image8BGColor" mktoName="Image #8 - Background Color" default="#ffffff">
+	<meta class="mktoString" id="image8BGImage" mktoName="Image #8 - Background Image" default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-10.png">
+
+	<!--Videos Sections-->
+	<meta class="mktoBoolean" id="video1Show" mktoName="Video #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="video1Order" mktoName="Video #1 - Order" default="">
+	<meta class="mktoString" id="video1BGColor" mktoName="Video #1 - Background Color" default="#FFCC32">
+	<meta class="mktoString" id="video1Url" mktoName="Video #1 - Video URL" default="https://www.youtube.com/embed/RBPdOY8wu-s?si=K5iwMhoHCyQALHyz&amp;controls=0&amp;autoplay=1&amp;mute=1">
+
+	<meta class="mktoBoolean" id="video2Show" mktoName="Video #2 - Visibility" default="true" true_value="flex"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="video2Order" mktoName="Video #2 - Order" default="">
+	<meta class="mktoString" id="video2BGColor" mktoName="Video #2 - Background Color" default="#ffffff">
+	<meta class="mktoString" id="video2BGVideo" mktoName="Video #2 - Background Video" default="https://www.youtube.com/embed/RBPdOY8wu-s?si=K5iwMhoHCyQALHyz&amp;controls=0&amp;autoplay=1&amp;mute=1">
+
+	<!--Quote Sections-->
+	<meta class="mktoBoolean" id="quote1Show" mktoName="Quote #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="quote1Order" mktoName="Quote #1 - Order" default="">
+	<meta class="mktoString" id="quote1BGColor" mktoName="Quote #1 - Background Color" default="#f0f0f0">
+
+	<meta class="mktoBoolean" id="quote2Show" mktoName="Quote #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="quote2Order" mktoName="Quote #2 - Order" default="">
+	<meta class="mktoString" id="quote2BGColor" mktoName="Quote #2 - Background Color" default="#ffcc32">
+
+	<meta class="mktoBoolean" id="quote3Show" mktoName="Quote #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="quote3Order" mktoName="Quote #3 - Order" default="">
+	<meta class="mktoString" id="quote3BGColor" mktoName="Quote #3 - Background Color" default="#102b4e">
+
+	<meta class="mktoBoolean" id="quote4Show" mktoName="Quote #4 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="quote4Order" mktoName="Quote #4 - Order" default="">
+	<meta class="mktoString" id="quote4BGColor" mktoName="Quote #4 - Background Color" default="#ffffff">
+
+	<!--CTA Sections-->
+	<meta class="mktoBoolean" id="cta1Show" mktoName="CTA #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="cta1Order" mktoName="CTA #1 - Order" default="">
+	<meta class="mktoString" id="cta1BGColor" mktoName="CTA #1 - Background Color" default="#102b4e">
+
+	<meta class="mktoBoolean" id="cta2Show" mktoName="CTA #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="cta2Order" mktoName="CTA #2 - Order" default="">
+	<meta class="mktoString" id="cta2BGColor" mktoName="CTA #2 - Background Color" default="#f0f0f0">
+
+	<meta class="mktoBoolean" id="cta3Show" mktoName="CTA #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="cta3Order" mktoName="CTA #3 - Order" default="">
+	<meta class="mktoString" id="cta3BGColor" mktoName="CTA #3 - Background Color" default="#ffffff">
+	<meta class="mktoString" id="cta3BGImage" mktoName="CTA #3 - Background Image" default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-cta-bg-img.png">
+
+	<!--Ecomm Sections-->
+	<meta class="mktoBoolean" id="ecomm1Show" mktoName="Ecomm #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="ecomm1Order" mktoName="Ecomm #1 - Order" default="">
+	<meta class="mktoString" id="ecomm1BGColor" mktoName="Ecomm #1 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="ecomm2Show" mktoName="Ecomm #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="ecomm2Order" mktoName="Ecomm #2 - Order" default="">
+	<meta class="mktoString" id="ecomm2BGColor" mktoName="Ecomm #2 - Background Color" default="#f0f0f0">
+
+	<meta class="mktoBoolean" id="ecomm3Show" mktoName="Ecomm #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="ecomm3Order" mktoName="Ecomm #3 - Order" default="">
+	<meta class="mktoString" id="ecomm3BGColor" mktoName="Ecomm #3 - Background Color" default="#ffffff">
+
+	<!--Social Sections-->
+	<meta class="mktoBoolean" id="social1Show" mktoName="Social #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="social1Order" mktoName="Social #1 - Order" default="">
+	<meta class="mktoString" id="social1BGColor" mktoName="Social #1 - Background Color" default="#102b4e">
+
+	<meta class="mktoBoolean" id="social2Show" mktoName="Social #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="social2Order" mktoName="Social #2 - Order" default="">
+	<meta class="mktoString" id="social2BGColor" mktoName="Social #2 - Background Color" default="#f0f0f0">
+
+	<!--Webinar Sections-->
+	<meta class="mktoBoolean" id="webinar1Show" mktoName="Webinar #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="webinar1Order" mktoName="Webinar #1 - Order" default="">
+	<meta class="mktoString" id="webinar1BGColor" mktoName="Webinar #1 - Background Color" default="#EDEDED">
+
+	<meta class="mktoBoolean" id="webinar2Show" mktoName="Webinar #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="webinar2Order" mktoName="Webinar #2 - Order" default="">
+	<meta class="mktoString" id="webinar2BGColor" mktoName="Webinar #2 - Background Color" default="#f0f0f0">
+	<meta class="mktoString" id="webinar2BGImage" mktoName="Webinar #2 - Background Image" default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-webinar-img-2.png">
+
+	<meta class="mktoBoolean" id="webinar3Show" mktoName="Webinar #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="webinar3Order" mktoName="Webinar #3 - Order" default="">
+	<meta class="mktoString" id="webinar3BGColor" mktoName="Webinar #3 - Background Color" default="#102b4e">
+	
+	<meta class="mktoBoolean" id="webinar4Show" mktoName="Webinar #4 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="webinar4Order" mktoName="Webinar #4 - Order" default="">
+	<meta class="mktoString" id="webinar4BGColor" mktoName="Webinar #4 - Background Color" default="#EDEDED">
+
+	<!--Speaker Sections-->
+	<meta class="mktoBoolean" id="speaker1Show" mktoName="Speaker #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="speaker1Order" mktoName="Speaker #1 - Order" default="">
+	<meta class="mktoString" id="speaker1BGColor" mktoName="Speaker #1 - Background Color" default="#f0f0f0">
+
+	<meta class="mktoBoolean" id="speaker2Show" mktoName="Speaker #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="speaker2Order" mktoName="Speaker #2 - Order" default="">
+	<meta class="mktoString" id="speaker2BGColor" mktoName="Speaker #2 - Background Color" default="#f0f0f0">
+
+	<meta class="mktoBoolean" id="speaker3Show" mktoName="Speaker #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="speaker3Order" mktoName="Speaker #3 - Order" default="">
+	<meta class="mktoString" id="speaker3BGColor" mktoName="Speaker #3 - Background Color" default="#ffffff">
+
+	<!--Agenda Sections-->
+	<meta class="mktoBoolean" id="agenda1Show" mktoName="Agenda #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="agenda1Order" mktoName="Agenda #1 - Order" default="">
+	<meta class="mktoString" id="agenda1BGColor" mktoName="Agenda #1 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="agenda2Show" mktoName="Agenda #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="agenda2Order" mktoName="Agenda #2 - Order" default="">
+	<meta class="mktoString" id="agenda2BGColor" mktoName="Agenda #2 - Background Color" default="#f0f0f0">
+
+	<!--Blog Sections-->
+	<meta class="mktoBoolean" id="blog1Show" mktoName="Blog #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="blog1Order" mktoName="Blog #1 - Order" default="">
+	<meta class="mktoString" id="blog1BGColor" mktoName="Blog #1 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="blog2Show" mktoName="Blog #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="blog2Order" mktoName="Blog #2 - Order" default="">
+	<meta class="mktoString" id="blog2BGColor" mktoName="Blog #2 - Background Color" default="#ffffff">
+
+	<!--Form Sections-->
+	<meta class="mktoBoolean" id="form1Show" mktoName="Form #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="form1Order" mktoName="Form #1 - Order" default="">
+	<meta class="mktoString" id="form1BGColor" mktoName="Form #1 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="form2Show" mktoName="Form #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="form2Order" mktoName="Form #2 - Order" default="">
+	<meta class="mktoString" id="form2BGColor" mktoName="Form #2 - Background Color" default="#ffffff">
+
+	<meta class="mktoBoolean" id="form3Show" mktoName="Form #3 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoString" id="form3Order" mktoName="Form #3 - Order" default="">
+	<meta class="mktoString" id="form3BGColor" mktoName="Form #3 - Background Color" default="#ffffff">
+	<meta class="mktoString" id="form3BGImage" mktoName="Form #3 - Background Image" default="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-form-bg-img.png">
+
+	<!--Thank You Sections-->
+	<meta class="mktoBoolean" id="ty1Show" mktoName="Thank You #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="ty2Show" mktoName="Thank You #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+
+	<!--Footer Sections-->
+	<meta class="mktoBoolean" id="footer1Show" mktoName="Footer #1 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="footer2Show" mktoName="Footer #2 - Visibility" default="true" true_value="block"
+		false_value="none" false_value_name="Hide" true_value_name="Show">
+
+		<style>
+			.background-hero-2 {
+			background-image: url('${hero2BGImage}');
+			
+			}
+			.show-instruction section{
+				position: relative;
+				border: 1px dashed #58595B;
+			}
+			.show-instruction section::before{
+				content: attr(data-mod-name);
+				display: block;
+				position: absolute;
+				top: 0;
+				background-color: #ffcc32;
+				height: 50px; 
+				width: max-content;
+				padding: 10px 15px;
+				left: 0;
+			}
+		</style>
+</head>
+
+<body class="${instructionShow}">
+	<!-- Header Start -->
+	<header class="bgc-primary sec-pad-25">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mktoText" id="header-mod-1-1" mktoName="Logo">
+					<a href="https://www.odpbusiness.com/" target="_blank">
+						<img class="img-fluid header-logo" width="176px"
+							src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-logo.png"
+							alt="ODP Business Solutions logo" />
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<main>
+		<!-- [Hero Section] Hero #1 -->
+		<section class="background-hero-1 align-items-center justify-content-center" data-mod-name="Mod. Hero #1"
+			style="display:${hero1Show};order:${hero1Order};background-image:url('${hero1BGImage}');">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="hero-text-container d-flex flex-column mktoText" id="hero-mod-1-1" mktoName="Copy">
+						<p class="subhead-text" style="color: #ffffff;">Lorem Ipsum</p>
+						<h2 class="text-white pb-2">Lorem ipsum dolor sit amet consectetur elit</h2>
+						<p class="text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							placerat nibh velit laoreet hendrerit. Mauris et turpis faucibus, rhoncus tortor at,
+							ullamcorper. Aliquam pretium scelerisque.</p>
+						<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- [Hero Section] Hero #2 -->
+		<section class="background-hero-2 align-items-center justify-content-center"
+			data-mod-name="Mod. Hero #2" style="display:${hero2Show};order:${hero2Order};">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col-lg-6 hero2-copy d-flex flex-column mktoText" id="hero-mod-2-1" mktoName="Copy"
+						style="max-width: 650px;">
+						<p class="subhead-text">Lorem Ipsum</p>
+						<h2 class="pb-2 tc-primary">Lorem ipsum dolor sit amet consectetur elit</h2>
+						<p class="pb-4 tc-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							placerat nibh velit laoreet hendrerit. Mauris et turpis faucibus, rhoncus tortor at,
+							ullamcorper. Aliquam pretium scelerisque.</p>
+						<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- [Hero Section] Hero #3 -->
+		<section class="hero-sec-3 sec-pad-100" data-mod-name="Mod. Hero #3" style="display:${hero3Show};background-color:${hero3BGColor};order:${hero3Order};">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<div class="hero-text-container mktoText" id="hero-mod-3-1" mktoName="Copy">
+							<p class="subhead-text">Lorem Ipsum</p>
+							<h2 class="pb-2 tc-primary">Lorem ipsum dolor sit amet consectetur elit</h2>
+							<p class="pb-4 tc-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus
+								placerat nibh velit laoreet hendrerit. </p>
+							<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img class="img-fluid mktoImg" id="hero-mod-3-2" mktoName="Image"
+							src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-hero-img-3.png"
+							width="100%" alt="Hand pressing a button on a standing desk control panel" srcset="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- [Hero Section] Hero #4 -->
+		<section class="sec-pad-100" data-mod-name="Mod. Hero #4" style="display:${hero4Show};background-color:${hero4BGColor};order:${hero4Order};">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-12 text-center d-flex flex-column">
+						<div class="width-1064 mb-5 align-self-center mktoText" id="hero-mod-4-1" mktoName="Copy">
+							<h1 class="tc-light-grey text-uppercase">Lorem Impsum</h1>
+							<h2 class="tc-primary pb-5">Lorem ipsum dolor sit amet consectetur elit</h2>
+							<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+						</div>
+						<img class="img-fluid mktoImg" id="hero-mod-4-2" mktoName="Image"
+							src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-hero-img-4.png"
+							alt="Abstract background of yellow pencils lying in a row" srcset="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- [Hero Section] Hero #5 -->
+		<section class="hero-sec-5 sec-pad-100" data-mod-name="Mod. Hero #5" style="display:${hero5Show};background-color:${hero5BGColor};order:${hero5Order};">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<div class="hero-text-container mktoText" id="hero-mod-5-1" mktoName="Copy">
+							<p class="subhead-text">Lorem Ipsum</p>
+							<h2 class="pb-2 tc-primary">20% off<br /><span class="text-weight-reg">product name</h2>
+							<p class="pb-4 tc-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus
+								placerat nibh velit laoreet hendrerit. </p>
+							<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img class="img-fluid mktoImg" id="hero-mod-5-2" mktoName="Image"
+							src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-hero-img-5.png"
+							width="100%" alt="Office chair with stack of files" srcset="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End of Hero Sections -->
+
+		<!-- Modules -->
+		<!-- [Modules] Module 1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Copy #1" style="display:${copy1Show};background-color:${copy1BGColor};order:${copy1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="width-620 mktoText" id="copy-mod-1-1" mktoName="Headline">
+							<h3 class="pb-3">Pellentesque habitant morbi tristique senectus.</h3>
+						</div>
+					</div>
+					<div class="col-md-6 mktoText" id="copy-mod-1-2" mktoName="Copy">
+						<p>Duis massa nisl, euismod semper dolor a, imperdiet laoreet risus. Nulla posuere eros sed ex
+							suscipit. Integer vitae erat a nibh auctor tempor. Donec metus nibh, condimentum elementum
+							leo
+							in, vulputate scelerisque diam.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Modules] Module 2 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Copy #2" style="display:${copy2Show};background-color:${copy2BGColor};order:${copy2Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-center">
+						<div class="width-1064 text-center mktoText" id="copy-mod-2-1" mktoName="Copy">
+							<h3 class="pb-3">Mauris et turpis, rhoncus tortor atemsilo nibh velit laoreet hendrerit
+								lorem
+								ipsum. </h3>
+							<p>Duis massa nisl, euismod semper dolor a, imperdiet laoreet risus. Nulla posuere eros sed
+								ex
+								suscipit. Integer vitae erat a nibh auctor tempor. Donec metus nibh, condimentum
+								elementum
+								leo in, vulputate scelerisque diam.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- [Modules] Module 3 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Copy #3" style="display:${copy3Show};background-color:${copy3BGColor};order:${copy3Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="width-620 mktoText" id="copy-mod-3-1" mktoName="Headline">
+							<h3 class="pb-3">Pellentesque habitant morbi tristique senectus.</h3>
+						</div>
+					</div>
+					<div class="col-md-6 mktoText" id="copy-mod-3-2" mktoName="Copy">
+						<ul class="list-gap-30">
+							<li class="checked-list">Integer vitae erat a nibh auctor tempor.</li>
+							<li class="checked-list">Donec metus nibh, condimentum elementum leo in, vulputate
+								scelerisque
+								diam.</li>
+							<li class="checked-list">Suspendisse sed mi interdum, dictum augue consequat, mollis sapien.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Modules] Module 4 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Copy #4" style="display:${copy4Show};background-color:${copy4BGColor};order:${copy4Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="width-1064 mktoText" id="copy-mod-4-1" mktoName="Copy">
+							<p class="subhead-text">Lorem Ipsum</p>
+							<h3 class="pb-3">Mauris et turpis, rhoncus tortor atemsilo nibh velit laoreet hendrerit
+								lorem
+								ipsum. </h3>
+							<p>Duis massa nisl, euismod semper dolor a, imperdiet laoreet risus. Nulla posuere eros sed
+								ex
+								suscipit. Integer vitae erat a nibh auctor tempor. Donec metus nibh, condimentum
+								elementum
+								leo in, vulputate scelerisque diam.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- [Featured Content] Featured #1 -->
+		<section class="article-sec reverse-col sec-pad-80 bgc-lighter-grey" data-mod-name="Mod. Featured #1" style="display:${featured1Show};background-color:${featured1BGColor};order:${featured1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="bg-white rounded-30 padding-50">
+							<div class="row align-items-center">
+								<div class="col-md-6 pe-md-5 mktoText" id="featured-mod-1-1" mktoName="Copy">
+									<p class="subhead-text">Lorem Ipsum</p>
+									<h3 class="margin-bottom-20 tc-primary">Pellentesque habitant morbi tristique
+										senectus
+									</h3>
+									<p class="pb-4 tc-primary">Integer vitae erat a nibh auctor tempor. Donec metus
+										nibh,
+										condimentum elementum leo in, vulputate scelerisque diam. Suspendisse sed mi
+										interdum, dictum augue consequat sapien.</p>
+									<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action
+									</a>
+								</div>
+								<div class="col-md-6">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-article-img-1.png"
+										alt="Cinematic image of a young business woman" srcset=""
+										class="rounded-20 img-fluid mktoImg" id="featured-mod-1-2" mktoName="Image" />
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Content] Featured #2 -->
+		<section class="article-sec sec-pad-80" data-mod-name="Mod. Featured #2" style="display:${featured2Show};background-color:${featured2BGColor};order:${featured2Order};">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-article-img-1.png"
+							alt="Cinematic image of a young business woman" width="100%" srcset=""
+							class="rounded-20 img-fluid mktoImg" id="featured-mod-2-1" mktoName="Image" />
+					</div>
+					<div class="col-md-6 ps-md-5 mktoText" id="featured-mod-2-2" mktoName="Copy">
+						<p class="subhead-text">Lorem Ipsum</p>
+						<h3 class="margin-bottom-20 tc-primary">Pellentesque habitant morbi tristique senectus</h3>
+						<p class="pb-4 tc-primary">Integer vitae erat a nibh auctor tempor. Donec metus nibh,
+							condimentum
+							elementum leo in, vulputate scelerisque diam. Suspendisse sed mi interdum, dictum augue
+							consequat sapien.</p>
+						<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Content] Featured #3 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Featured #3" style="display:${featured3Show};background-color:${featured3BGColor};order:${featured3Order};">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-12 d-flex flex-column align-items-center text-center mktoText"
+						id="featured-mod-3-1" mktoName="Copy">
+						<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-article-img-2.png"
+							width="100%" alt="" srcset="" class="rounded-20 img-fluid" />
+						<div class="pt-5 width-1064">
+							<p class="subhead-text">Lorem Ipsum</p>
+							<h3 class="pb-2">Pellentesque habitant morbi tristique senectus</h3>
+							<p class="pb-4">Integer vitae erat a nibh auctor tempor. Donec metus nibh, condimentum
+								elementum
+								leo in, vulputate scelerisque diam. Suspendisse sed mi interdum, dictum augue consequat
+								sapien.</p>
+							<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Content] Featured #4 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Featured #4" style="display:${featured4Show};background-color:${featured4BGColor};order:${featured4Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 d-flex flex-column align-items-center text-center">
+						<div class="article-bg-img d-flex flex-column justify-content-center padding-50" style="background-image: url('${featured4BGImage}');">
+							<div class="align-self-center width-1064 mktoText" id="featured-mod-4-1" mktoName="Copy">
+								<h3 class="pb-5">Mauris et turpis rhoncus tortor lorem pellentesque habitant morbi
+									tristique
+									senectus.</h3>
+								<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</section>
+		<!-- [Featured Content] KEY FEATURES #1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Key Features #1" style="display:${keyFeatures1Show};background-color:${keyFeatures1BGColor};order:${keyFeatures1Order};">
+			<div class="container">
+				<div class="row responsive-column-gap">
+					<div class="col-md-5 mktoText" id="key-features-mod-1-1" mktoName="Copy">
+						<p class="subhead-text">LOREM IPSUM</p>
+						<h3 class="pb-2">Pellentesque habitant morbi tristique senectus</h3>
+						<p class="pb-4">Integer vitae erat a nibh auctor tempor. Donec metus nibh, condimentum elementum
+							leo
+							in, vulputate scelerisque diam.</p>
+						<a href="#" class="btn btn-primary" target="_blank">Call to Action</a>
+					</div>
+					<div class="col-md-6 offset-md-1 ps-md-0 align-self-center mktoText" id="key-features-mod-1-2"
+						mktoName="List">
+						<ul class="bullet-icon-list">
+							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Content] KEY FEATURES #2 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Key Features #2" style="display:${keyFeatures2Show};background-color:${keyFeatures2BGColor};order:${keyFeatures2Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center mktoText" id="key-features-mod-2-1" mktoName="Copy">
+						<p class="subhead-text">LOREM IPSUM</p>
+						<h3 class="pb-5">Pellentesque habitant morbi tristique senectus</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 grid-3-box">
+						<div class="feature-box rounded-30 yellow mktoText" id="key-features-mod-2-2"
+							mktoName="Features #1">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon-white-bg.png"
+								width="55px" class="pb-5 img-fluid" alt="">
+							<p class="pt-2 bolder">Phasellus placerat dolor tortor nibh velit turpis.</p>
+							<p class="text-sm">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper imperdiet
+								laoreet
+								risus.</p>
+						</div>
+
+						<div class="feature-box rounded-30 yellow mktoText" id="key-features-mod-2-3"
+							mktoName="Features #2">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon-white-bg.png"
+								width="55px" class="pb-5 img-fluid" alt="">
+							<p class="pt-2 bolder">Phasellus placerat dolor tortor nibh velit turpis.</p>
+							<p class="text-sm">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper imperdiet
+								laoreet
+								risus.</p>
+						</div>
+
+						<div class="feature-box rounded-30 yellow mktoText" id="key-features-mod-2-4"
+							mktoName="Features #3">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon-white-bg.png"
+								width="55px" class="pb-5 img-fluid" alt="">
+							<p class="pt-2 bolder">Phasellus placerat dolor tortor nibh velit turpis.</p>
+							<p class="text-sm">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper imperdiet
+								laoreet
+								risus.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 pt-5 text-center mktoText" id="key-features-mod-2-5" mktoName="CTA">
+						<a href="#" class="btn btn-primary btn-dark" target="_blank">Call to Action</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Content] KEY FEATURES #3 -->
+		<section class="sec-pad-80 bgc-lighter-grey" data-mod-name="Mod. Key Features #3" style="display:${keyFeatures3Show};background-color:${keyFeatures3BGColor};order:${keyFeatures3Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-center text-center">
+						<div class="width-1064">
+							<div class="pb-5 mktoText" id="key-features-mod-3-1" mktoName="Headline">
+								<p class="subhead-text">Lorem Ipsum</p>
+								<h3>Pellentesque habitant morbi tristique senectus </h3>
+							</div>
+							<div class="grid-2-box pb-5">
+								<div class="feature-box rounded-30 white text-center mktoText" id="key-features-mod-3-2"
+									mktoName="Features #1">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon.png"
+										width="40px" class="pb-4 img-fluid" alt="">
+									<p class="text-sm">Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit.</p>
+								</div>
+								<div class="feature-box rounded-30 white text-center mktoText" id="key-features-mod-3-3"
+									mktoName="Features #2">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon.png"
+										width="40px" class="pb-4 img-fluid" alt="">
+									<p class="text-sm">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper
+										imperdiet
+										laoreet risus.</p>
+								</div>
+								<div class="feature-box rounded-30 white text-center mktoText" id="key-features-mod-3-4"
+									mktoName="Features #3">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon.png"
+										width="40px" class="pb-4 img-fluid" alt="">
+									<p class="text-sm">Aliquam pretium scelerisque.</p>
+								</div>
+								<div class="feature-box rounded-30 white text-center mktoText" id="key-features-mod-3-5"
+									mktoName="Features #4">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon.png"
+										width="40px" class="pb-4 img-fluid" alt="">
+									<p class="text-sm">Imperdiet laoreet risus nulla posuere eros sed suscipit.</p>
+								</div>
+							</div>
+							<div class="mktoText" id="key-features-mod-3-6" mktoName="CTA">
+								<a href="#" class="btn btn-primary" target="_blank">Call to Action</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Content] KEY FEATURES #4 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Key Features #4" style="display:${keyFeatures4Show};background-color:${keyFeatures4BGColor};order:${keyFeatures4Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-center text-center">
+						<div class="width-1064">
+							<div class="mktoText" id="key-features-mod-4-1" mktoName="Copy">
+								<p class="subhead-text">Lorem Ipsum</p>
+								<h3 class="pb-5">Pellentesque habitant morbi tristique senectus </h3>
+							</div>
+							
+							<div class="grid-3-box">
+								<div class="text-center mktoText" id="key-features-mod-4-2" mktoName="Features #1">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon.png"
+										width="40px" class="pb-4 img-fluid" alt="">
+									<p class="bolder">Phasellus placerat dolor tortor nibh velit turpis.</p>
+									<p class="text-sm">Lorem ipsum dolor sit amet,
+										consectetur adipiscing elit.</p>
+								</div>
+								<div class="text-center mktoText" id="key-features-mod-4-3" mktoName="Features #2">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon.png"
+										width="40px" class="pb-4 img-fluid" alt="">
+									<p class="bolder">Phasellus placerat dolor tortor nibh velit turpis.</p>
+									<p class="text-sm">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper
+										imperdiet
+										laoreet risus.</p>
+								</div>
+								<div class="text-center mktoText" id="key-features-mod-4-4" mktoName="Features #3">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-check-mark-icon.png"
+										width="40px" class="pb-4 img-fluid" alt="">
+									<p class="bolder">Phasellus placerat dolor tortor nibh velit turpis.</p>
+									<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- [Featured Image] IMAGE BLOCK #1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Image Block #1" style="display:${image1Show};background-color:${image1BGColor};order:${image1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-1.png"
+							class="rounded-30 img-fluid mktoImg" id="image-mod-1-1" mktoName="Image" width="100%"
+							alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Image] IMAGE BLOCK #2 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Image Block #2" style="display:${image2Show};background-color:${image2BGColor};order:${image2Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="three-img-grid-container">
+							<div class="grid-item large-image">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-2.png"
+									width="100%" class="mktoImg" id="image-mod-2-1" mktoName="Image #1" alt="">
+							</div>
+							<div class="grid-item small-image-top">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-3.png"
+									width="100%" class="mktoImg" id="image-mod-2-2" mktoName="Image #2" alt="">
+							</div>
+							<div class="grid-item small-image-bottom">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-4.png"
+									width="100%" class="mktoImg" id="image-mod-2-3" mktoName="Image #3" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Image] IMAGE BLOCK #3 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Image Block #3" style="display:${image3Show};background-color:${image3BGColor};order:${image3Order};">
+			<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-5.png"
+				class="img-fluid mktoImg" id="image-mod-3-1" mktoName="Full-width Image" width="100%" alt="">
+		</section>
+		<!-- [Featured Image] IMAGE BLOCK #4 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Image Block #4" style="display:${image4Show};background-color:${image4BGColor};order:${image4Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="four-img-grid-container">
+							<div class="grid-item">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-6.png"
+									width="100%" class="mktoImg" id="image-mod-4-1" mktoName="Image #1" alt="">
+							</div>
+							<div class="grid-item">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-9.png"
+									width="100%" class="mktoImg" id="image-mod-4-2" mktoName="Image #2" alt="">
+							</div>
+							<div class="grid-item">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-7.png"
+									width="100%" class="mktoImg" id="image-mod-4-3" mktoName="Image #3" alt="">
+							</div>
+							<div class="grid-item">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-8.png"
+									width="100%" class="mktoImg" id="image-mod-4-4" mktoName="Image #4" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Image] IMAGE BLOCK #5 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Image Block #5" style="display:${image5Show};background-color:${image5BGColor};order:${image5Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="img-block-hero-bg padding-70 d-flex flex-column justify-content-center" style="background-image: url('${image5BGImage}');">
+							<div class="width-620 mktoText" id="image-mod-5-1" mktoName="Copy">
+								<h3 class="pb-5">Pellentesque habitant morbi tristique senectus</h3>
+								<a href="#" class="btn btn-primary" target="_blank">Call to Action</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Image] IMAGE BLOCK #6 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Image Block #6" style="display:${image6Show};background-color:${image6BGColor};order:${image6Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="three-img-grid-container">
+							<div class="grid-item text-overlay large-image padding-70">
+								<img src="${image6BGImage}"
+									width="100%" alt="">
+								<div class="d-flex justify-content-start align-self-start"
+									style="width: 100%; z-index: 1;">
+									<div class="width-620 mktoText" id="image-mod-6-2" mktoName="Copy">
+										<h3 class="pb-5" style="color: #ffffff;">Pellentesque habitant morbi tristique
+											senectus</h3>
+										<a href="#" class="btn btn-primary btn-dark" target="_blank">Call to Action</a>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="grid-item small-image-top">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-3.png"
+									width="100%" class="mktoImg" id="image-mod-6-3" mktoName="Image #2" alt="">
+							</div>
+							<div class="grid-item small-image-bottom">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-4.png"
+									width="100%" class="mktoImg" id="image-mod-6-4" mktoName="Image #3" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Image] IMAGE BLOCK #7 -->
+		<section class="img-block-hero-bg-2 sec-pad-80 sec-margin-80" data-mod-name="Mod. Image Block #7" style="display:${image7Show};background-color:${image7BGColor};background-image:url('${image7BGImage}');order:${image7Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="width-620 mktoText" id="image-mod-7-1" mktoName="Copy">
+							<h3 class="pb-5">Pellentesque habitant morbi tristique senectus</h3>
+							<a href="#" class="btn btn-primary btn-dark" target="_blank">Call to Action</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Image] IMAGE BLOCK #8 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Image Block #8" style="display:${image8Show};background-color:${image8BGColor};order:${image8Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="four-img-grid-container">
+							<div class="grid-item text-overlay padding-70">
+								<img src="${image8BGImage}"
+									width="100%" alt="">
+								<div style="width: 100%; z-index: 1;" class="mktoText" id="image-mod-8-2"
+									mktoName="Copy">
+									<h3 class="pb-5 text-white">Pellentesque habitant morbi tristique senectus</h3>
+									<a href="#" class="btn btn-primary btn-light" target="_blank">Call to Action</a>
+								</div>
+							</div>
+							<div class="grid-item">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-9.png"
+									width="100%" class="mktoImg" id="image-mod-8-3" mktoName="Image #2" alt="">
+							</div>
+							<div class="grid-item">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-7.png"
+									width="100%" class="mktoImg" id="image-mod-8-4" mktoName="Image #3" alt="">
+							</div>
+							<div class="grid-item">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-featured-img-6.png"
+									width="100%" class="mktoImg" id="image-mod-8-5" mktoName="Image #4" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Video] VIDEO #1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Video #1" style="display:${video1Show};order:${video1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="bgc-secondary rounded-30 padding-70" style="background-color:${video1BGColor};">
+							<div class="row gy-4 align-items-center">
+								<div class="col-lg-6 mktoText" id="video-mod-1-1" mktoName="Copy">
+									<p class="subhead-text" style="color:#58595B;">Lorem Ipsum</p>
+									<h3 class="margin-bottom-20 tc-primary">Lorem ipsum dolor sit amet consectetur elit
+									</h3>
+									<p class="pb-4 tc-primary">Integer vitae erat a nibh auctor tempor. Donec metus
+										nibh,
+										condimentum elementum leo in, vulputate scelerisque diam. Suspendisse sed mi
+										interdum, dictum augue consequat sapien.</p>
+									<a role="button" class="btn btn-primary btn-dark" href="#" target="_blank">Call to
+										Action </a>
+								</div>
+								<div class="col-lg-6">
+									<div class="ratio ratio-16x9">
+										<iframe class="rounded-30" width="560" height="315"
+											src="${video1Url}"
+											title="Video player" frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Video] VIDEO #2 -->
+		<section class="fw-video-sec sec-pad-80 sec-margin-80" data-mod-name="Mod. Video #2" style="display:${video2Show};background-color:${video2BGColor};order:${video2Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="fw-bg-video">
+							<div class="ratio ratio-16x9">
+								<iframe width="560" height="315"
+									src="${video2BGVideo}"
+									title="Video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="fw-video-copy mt-5 text-center mktoText" id="video-mod-2-1" mktoName="Headline">
+							<h3 class="text-white">Duis massa nisl, euismod semper dolor imperdiet laoreet risus</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Quote] TESTIMONIAL #1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Testimonial #1" style="display:${quote1Show};order:${quote1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-center">
+						<div class="rounded-30 padding-70 width-1064 bgc-lighter-grey mktoText" id="quote-mod-1-1"
+							mktoName="Copy" style="background-color:${quote1BGColor};">
+							<p class="subhead-text tc-dark-grey">Review</p>
+							<h3 class="quote-text pb-5">“Adipiscing elit phasellus placerat nibh velit laoreet
+								hendrerit.
+								Mauris et turpis faucibus, rhoncus tortor at, ullamcorper. Aliquam pretium scelerisque.”
+							</h3>
+							<p class="pt-4 mb-0 bolder">Anna Macintoshes</p>
+							<p class="tc-grey text-sm">Job title would go here, Name of Company </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Quote] TESTIMONIAL #2 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Testimonial #2" style="display:${quote2Show};order:${quote2Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="bgc-secondary rounded-30 padding-70" style="background-color:${quote2BGColor};">
+							<div class="row gy-4">
+								<div class="col-md-5 pe-lg-5">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-portrait-1.png"
+										width="438px" class="img-fluid rounded-10 mktoImg" id="quote-mod-2-1"
+										mktoName="Image" alt="">
+								</div>
+								<div class="col-md-7 mktoText" id="quote-mod-2-2" mktoName="Copy">
+									<h3 class="quote-text pb-5">“Adipiscing elit phasellus placerat nibh velit laoreet
+										hendrerit. Mauris et turpis faucibus, rhoncus tortor at, ullamcorper. Aliquam
+										pretium scelerisque.”</h3>
+									<p class="pt-4 mb-0 bolder">Anna Macintoshes</p>
+									<p class="tc-grey text-sm">Job title would go here, Name of Company </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Quote] TESTIMONIAL #3 -->
+		<section class="sec-pad-80 bgc-primary" data-mod-name="Mod. Testimonial #3" style="display:${quote3Show};background-color:${quote3BGColor};order:${quote3Order};">
+			<div class="container">
+				<div class="row gy-4">
+					<div class="col-md-5 pe-lg-5">
+						<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-portrait-2.png"
+							width="478px" class="img-fluid rounded-10 mktoImg" id="quote-mod-3-1" mktoName="Image"
+							alt="">
+					</div>
+					<div class="col-md-7 mktoText" id="quote-mod-3-2" mktoName="Copy">
+						<p class="subhead-text">Review</p>
+						<h3 class="quote-text text-white pb-5">“Adipiscing elit phasellus placerat nibh velit laoreet
+							hendrerit. Mauris et turpis faucibus, rhoncus tortor at, ullamcorper. Aliquam pretium
+							scelerisque.”</h3>
+						<p class="pt-4 mb-0 bolder tc-secondary">Anna Macintoshes</p>
+						<p class="tc-grey text-sm">Job title would go here, Name of Company </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Quote] TESTIMONIAL #4 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Testimonial #4" style="display:${quote4Show};background-color:${quote4BGColor};order:${quote4Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="grid-2-box">
+							<div class="bgc-secondary d-flex flex-column justify-content-between rounded-30 padding-50 mktoText"
+								id="quote-mod-4-1" mktoName="Testimonial #1">
+								<h3 class="quote-text pb-5">“Adipiscing elit phasellus placerat nibh velit laoreet
+									hendrerit. Mauris et turpis faucibus, rhoncus tortor at, ullamcorper. Aliquam
+									pretium
+									scelerisque.”</h3>
+								<div class="mt-3 divider">
+									<p class="pt-4 mb-0 bolder">Jeremy Kastinakis</p>
+									<p class="tc-grey text-sm">Job title would go here, Name of Company </p>
+								</div>
+							</div>
+							<div class="bgc-lighter-grey d-flex flex-column justify-content-between rounded-30 padding-50 mktoText"
+								id="quote-mod-4-2" mktoName="Testimonial #2">
+								<h3 class="quote-text pb-5">“Imperdiet laoreet risus aliquam pretiu orem ipsum dolor sit
+									amet, consectetur nulla eros sed suscipit.”</h3>
+								<div class="mt-3 divider">
+									<p class="pt-4 mb-0 bolder">Jeremy Kastinakis</p>
+									<p class="tc-grey text-sm">Job title would go here, Name of Company </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured CTA] CTA #1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. CTA #1" style="display:${cta1Show};order:${cta1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rounded-30 padding-70 bgc-primary text-center mktoText" id="cta-mod-1-1"
+							mktoName="Copy" style="background-color:${cta1BGColor};">
+							<h3 class="text-white pb-5">Mauris et turpis, rhoncus tortor at, ullamcorper phasellus
+								placerat
+								nibh velit laoreet hendrerit lorem ipsum. </h3>
+							<a role="button" class="btn btn-primary width-344" href="#" target="_blank">Call to Action
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured CTA] CTA #2 -->
+		<section class="sec-pad-80 bgc-lighter-grey" data-mod-name="Mod. CTA #2" style="display:${cta2Show};background-color:${cta2BGColor};order:${cta2Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-center">
+						<div class="width-1276 text-center mktoText" id="cta-mod-2-1" mktoName="Copy">
+							<h3 class="pb-5">Mauris et turpis, rhoncus tortor at, ullamcorper phasellus placerat nibh
+								velit
+								laoreet hendrerit lorem ipsum. </h3>
+							<div class="double-cta">
+								<a role="button" class="btn btn-primary btn-dark translucent" href="#"
+									target="_blank">Call
+									to Action </a>
+								<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured CTA] CTA #3 -->
+		<section class="sec-pad-80" data-mod-name="Mod. CTA #3" style="display:${cta3Show};background-color:${cta3BGColor};order:${cta3Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-center">
+						<div class="cta-hero-bg rounded-30 padding-70 width-1064 text-center d-flex flex-column justify-content-center mktoText"
+							id="cta-mod-3-1" mktoName="Copy" style="background-image: url('${cta3BGImage}');">
+							<h3 class="pb-3">20% off <span style="font-weight: 400;">product name</span></h3>
+							<p class="pb-3">Duis massa nisl velit semper dolor.</p>
+							<a class="cta-link link-dark" href="#" target="_blank">Call to Action</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [eCOMM] Product #1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. eCOMM Product #1" style="display:${ecomm1Show};background-color:${ecomm1BGColor};order:${ecomm1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="grid-2-box two-products">
+						<div class="bordered-content rounded-30 padding-30 d-flex flex-column bg-white mktoText"
+							id="ecomm-mod-1-1" mktoName="Product #1">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-product-digital-camera.png"
+								width="100%" class="img-fluid" alt="">
+							<div class="pt-3 d-flex flex-row justify-content-between">
+								<div class="width-484">
+									<p class="subhead-text">DIGITAL CAMERAS</p>
+									<p class="title-sm pb-2">Canon IVY CLIQ+2 8 Megapixel Instant Digital Camera - Rose
+										Gold…</p>
+								</div>
+								<p class="star-rating">5/5</p>
+							</div>
+							<div class="flex-grow-1 align-content-end">
+								<div class="d-flex flex-row justify-content-between align-items-center flex-wrap gap-4">
+									<p class="price-tag">$139.69</p>
+									<a role="button" class="btn btn-primary btn-dark translucent" href="#"
+										target="_blank">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="bordered-content rounded-30 padding-30 d-flex flex-column bg-white mktoText"
+							id="ecomm-mod-1-2" mktoName="Product #2">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-product-toaster.png"
+								width="100%" class="img-fluid" alt="">
+							<div class="pt-3 d-flex flex-row justify-content-between">
+								<div class="width-484">
+									<p class="subhead-text">TOASTERS & TOASTER OVENS</p>
+									<p class="title-sm pb-2">Brentwood Toaster Oven - 0.30 ft³ Capacity - Toast, Broil -
+										Black…</p>
+								</div>
+								<p class="star-rating">4.5/5</p>
+							</div>
+							<div class="flex-grow-1 align-content-end">
+								<div class="d-flex flex-row justify-content-between align-items-center flex-wrap gap-4">
+									<p class="price-tag">$70.79</p>
+									<a role="button" class="btn btn-primary btn-dark translucent" href="#"
+										target="_blank">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 pt-5 text-center">
+						<div class="mktoText" id="ecomm-mod-1-3" mktoName="CTA">
+							<a role="button" class="btn btn-primary width-554" href="#" target="_blank">Call to Action
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [eCOMM] Product #2 -->
+		<section class="sec-pad-80 bgc-lighter-grey" data-mod-name="Mod. eCOMM Product #2" style="display:${ecomm2Show};background-color:${ecomm2BGColor};order:${ecomm2Order};">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 width-1064">
+						<div class="rounded-30 bgc-white padding-70">
+							<div class="row responsive-column-gap">
+								<div class="col-md-6 pe-md-0">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-product-digital-camera-large.png"
+										width="460px" class="rounded-10 img-fluid mktoImg" id="ecomm-mod-2-1"
+										mktoName="Image" alt="">
+								</div>
+								<div class="col-md-6 pad-left-80 d-flex flex-column mktoText" id="ecomm-mod-2-2"
+									mktoName="Copy">
+									<div class="pb-3 d-flex flex-row justify-content-between">
+										<p class="price-tag">$139.69</p>
+										<p class="star-rating">5/5</p>
+									</div>
+									<div class="flex-grow-1 align-content-end">
+										<p class="subhead-text">DIGITAL CAMERAS</p>
+										<p class="title-sm pb-3">Canon IVY CLIQ+2 8 Megapixel Instant Digital Camera -
+											Rose
+											Gold…</p>
+										<a role="button" class="btn btn-primary btn-dark translucent" href="#"
+											target="_blank">Add to Cart</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [eCOMM] Product #3 -->
+		<section class="sec-pad-80" data-mod-name="Mod. eCOMM Product #3" style="display:${ecomm3Show};background-color:${ecomm3BGColor};order:${ecomm3Order};">
+			<div class="container">
+				<div class="row">
+					<div class="grid-3-box three-products">
+						<div class="bordered-content rounded-30 padding-30 bg-white d-flex flex-column mktoText"
+							id="ecomm-mod-3-1" mktoName="Product #1">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-product-digital-camera-sm.png"
+								width="100%" class="img-fluid" alt="">
+							<p class="pt-3 subhead-text">DIGITAL CAMERAS</p>
+							<p class="title-sm pb-2">Canon IVY CLIQ+2 8 Megapixel Instant Digital Camera - Rose Gold…
+							</p>
+
+							<div class="flex-grow-1 align-content-end">
+								<div class="d-flex flex-row justify-content-between align-items-center flex-wrap gap-4">
+									<p class="price-tag">$139.69</p>
+									<a class="add-to-cart-link" href="#" target="_blank">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="bordered-content rounded-30 padding-30 bg-white d-flex flex-column mktoText"
+							id="ecomm-mod-3-2" mktoName="Product #2">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-product-toaster-sm.png"
+								width="100%" class="img-fluid" alt="">
+							<p class="pt-3 subhead-text">TOASTERS & TOASTER OVENS</p>
+							<p class="title-sm pb-2">Brentwood Toaster Oven - 0.30 ft³ Capacity - Toast, Broil - Black…
+							</p>
+
+							<div class="flex-grow-1 align-content-end">
+								<div class="d-flex flex-row justify-content-between align-items-center flex-wrap gap-4">
+									<p class="price-tag">$139.69</p>
+									<a class="add-to-cart-link" href="#" target="_blank">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+						<div class="bordered-content rounded-30 padding-30 bg-white d-flex flex-column mktoText"
+							id="ecomm-mod-3-3" mktoName="Product #3">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-product-desk-computer.png"
+								width="100%" class="img-fluid" alt="">
+							<p class="pt-3 subhead-text">TOASTERS & TOASTER OVENS</p>
+							<p class="title-sm pb-2">Brentwood Toaster Oven - 0.30 ft³ Capacity - Toast, Broil - Black…
+							</p>
+
+							<div class="flex-grow-1 align-content-end">
+								<div class="d-flex flex-row justify-content-between align-items-center flex-wrap gap-4">
+									<p class="price-tag">$139.69</p>
+									<a class="add-to-cart-link" href="#" target="_blank">Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 pt-5 text-center">
+						<div class="mktoText" id="ecomm-mod-3-4" mktoName="CTA">
+							<a role="button" class="btn btn-primary width-554" href="#" target="_blank">Call to Action
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Share] Social Media #1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Social Media #1" style="display:${social1Show};order:${social1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-center">
+						<div class="bgc-primary rounded-30 padding-70 width-1064 text-center mktoText"
+							id="social-mod-1-1" mktoName="Copy" style="background-color:${social1BGColor};">
+							<p class="subhead-text">Lorem Ipsum</p>
+							<h3 class="pb-4 text-white">Lorem ipsum dolor sit amet elit.</h3>
+							<div class="d-flex gap-3 justify-content-center">
+								<a href="https://www.linkedin.com/company/odp-business-solutions/?SID=null"
+									title="LinkedIn" target="_blank" aria-label="LinkedIn"><img
+										src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-linkedin-icon-light.png"
+										alt="" width="55" height="55" loading="lazy"></a>
+								<a href="https://x.com/odpbusiness" title="Twitter" target="_blank"
+									aria-label="Twitter"><img
+										src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-twitter-icon-light.png"
+										alt="" width="55" height="55" loading="lazy"></a>
+								<a href="https://www.instagram.com/odpbusiness/?SID=null&odserver=www.odpbusiness.com"
+									title="Instagram" target="_blank" aria-label="Instagram"><img
+										src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-youtube-icon-light.png"
+										alt="" width="55" height="55" loading="lazy"></a>
+								<a href="https://www.youtube.com/c/ODPBusinessSolutions?SID=null&odserver=www.odpbusiness.com"
+									title="YouTube" target="_blank" aria-label="YouTube"><img
+										src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-instagram-icon-light.png"
+										alt="" width="55" height="55" loading="lazy"></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Share] Social Media #2 -->
+		<section class="sec-pad-80 bgc-lighter-grey" data-mod-name="Mod. Social Media #2" style="display:${social2Show};background-color:${social2BGColor};order:${social2Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center mktoText" id="social-mod-2-1" mktoName="Copy">
+						<p class="subhead-text">Lorem Ipsum</p>
+						<h3 class="pb-4">Lorem ipsum dolor sit amet elit.</h3>
+						<div class="d-flex gap-3 justify-content-center">
+							<a href="https://www.linkedin.com/company/odp-business-solutions/?SID=null" title="LinkedIn"
+								target="_blank" aria-label="LinkedIn"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-linkedin-icon-dark.png"
+									alt="" width="55" height="55" loading="lazy"></a>
+							<a href="https://x.com/odpbusiness" title="Twitter" target="_blank"
+								aria-label="Twitter"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-twitter-icon-dark.png"
+									alt="" width="55" height="55" loading="lazy"></a>
+							<a href="https://www.instagram.com/odpbusiness/?SID=null&odserver=www.odpbusiness.com"
+								title="Instagram" target="_blank" aria-label="Instagram"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-youtube-icon-dark.png"
+									alt="" width="55" height="55" loading="lazy"></a>
+							<a href="https://www.youtube.com/c/ODPBusinessSolutions?SID=null&odserver=www.odpbusiness.com"
+								title="YouTube" target="_blank" aria-label="YouTube"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-instagram-icon-dark.png"
+									alt="" width="55" height="55" loading="lazy"></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- WEBINAR/EVENT/SEMINAR #1 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Webinar #1" style="display:${webinar1Show};background-color:${webinar1BGColor};order:${webinar1Order};">
+			<div class="container">
+				<div class="row align-items-center gy-4 responsive-column-gap">
+					<div class="col-md-6">
+						<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-webinar-img-1.png"
+							alt="" width="700px" srcset="" class="rounded-30 img-fluid mktoImg" id="webinar-mod-1-1"
+							mktoName="Image">
+					</div>
+					<div class="col-md-6 pad-left-80 mktoText" id="webinar-mod-1-2" mktoName="Copy">
+						<p class="subhead-text">Lorem Ipsum</p>
+						<h3 class="margin-bottom-20 tc-primary">Lorem ipsum dolor sit amet consectetur elit</h3>
+						<p class="pb-4 tc-primary">Integer vitae erat a nibh auctor tempor. Donec metus nibh,
+							condimentum
+							elementum leo in, vulputate scelerisque diam. Suspendisse sed mi interdum, dictum augue
+							consequat sapien.</p>
+						<div class="d-flex gap-3 pb-4 mb-3 flex-wrap">
+							<div class="rounded-30 bg-white d-flex padding-10 gap-3 align-items-center flex-grow-1">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-calendar-icon-light.png"
+									width="38px" alt="">
+								<p class="webinar-date-time">Thursday, September 28, 2025</p>
+							</div>
+							<div class="rounded-30 bg-white d-flex padding-10 gap-3 align-items-center flex-grow-1">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-clock-icon-light.png"
+									width="38px" alt="">
+								<p class="webinar-date-time">12–2:30pm (EST)</p>
+							</div>
+						</div>
+						<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- WEBINAR/EVENT/SEMINAR #2 -->
+		<section class="sec-margin-80 bgc-lighter-grey" data-mod-name="Mod. Webinar #2" style="display:${webinar2Show};background-color:${webinar2BGColor};order:${webinar2Order};">
+			<div class="webinar-hero-bg-2 sec-pad-80" style="background-image: url('${webinar2BGImage}');">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="width-620 mktoText" id="webinar-mod-2-1" mktoName="Headline">
+								<p class="subhead-text text-white">Lorem Ipsum</p>
+								<h3 class="pb-5">Pellentesque habitant morbi tristique senectus</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row py-4">
+					<div class="d-flex justify-content-between flex-wrap gap-4 mktoText" id="webinar-mod-2-2"
+					mktoName="Copy/CTA">
+						<div class="d-flex flex-wrap gap-5 responsive-column-gap">
+							<div class="d-flex gap-3 align-items-center">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-calendar-icon-white.png"
+									width="54px" alt="">
+								<p class="webinar-date-time">Thursday, September 28, 2025</p>
+							</div>
+							<div class="d-flex gap-3 align-items-center">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-clock-icon-white.png"
+									width="54px" alt="">
+								<p class="webinar-date-time">12–2:30pm (EST)</p>
+							</div>
+						</div>
+						<div>
+							<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- WEBINAR/EVENT/SEMINAR #3 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Webinar #3" style="display:${webinar3Show};order:${webinar3Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="bgc-primary rounded-30 padding-70" style="background-color:${webinar3BGColor};">
+							<div class="row gy-4 responsive-column-gap align-items-center">
+								<div class="col-lg-6">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-webinar-img-3.png"
+										width="634px" class="img-fluid rounded-20 mktoImg" id="webinar-mod-3-1"
+										mktoName="Image" alt="">
+								</div>
+								<div class="col-lg-6 pad-left-80 mktoText" id="webinar-mod-3-2" mktoName="Copy">
+									<p class="subhead-text">Lorem Ipsum</p>
+									<h3 class="margin-bottom-20 text-white">Lorem ipsum dolor sit amet consectetur elit
+									</h3>
+									<p class="pb-4 text-white">Integer vitae erat a nibh auctor tempor. Donec metus
+										nibh,
+										condimentum
+										elementum leo in, vulputate scelerisque diam. Suspendisse sed mi interdum,
+										dictum
+										augue
+										consequat sapien.</p>
+									<div class="d-flex gap-3 mb-3 flex-wrap">
+										<div class="divider-light pt-2 flex-grow-1">
+											<p class="text-xsm text-white" style="font-weight: 800;">DATE</p>
+											<p class="webinar-date-time text-white">Thursday, September 28, 2025</p>
+										</div>
+										<div class="divider-light pt-2 flex-grow-1">
+											<p class="text-xsm text-white" style="font-weight: 800;">TIME</p>
+											<p class="webinar-date-time text-white">12–2:30pm (EST)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pt-5 text-center mktoText" id="webinar-mod-3-3" mktoName="CTA">
+							<a role="button" class="btn btn-primary width-344" href="#" target="_blank">Call to Action
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- WEBINAR/EVENT/SEMINAR #4 -->
+		<section class="sec-pad-80" data-mod-name="Mod. Webinar #4" style="display:${webinar4Show};background-color:${webinar4BGColor};order:${webinar4Order};">
+			<div class="container">
+				<div class="row gy-4 responsive-column-gap align-items-center">
+					<div class="col-md-6">
+						<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-webinar-img-4.png"
+							alt="" width="700px" srcset="" class="rounded-30 img-fluid mktoImg" id="webinar-mod-4-1"
+							mktoName="Image">
+					</div>
+					<div class="col-md-6 pad-left-80 mktoText" id="webinar-mod-4-2" mktoName="Copy">
+						<div class="rounded-30 bg-white padding-20 width-440 text-center">
+							<p class="webinar-date-time">September 28, 2025 • 12–2:30pm (EST)</p>
+						</div>
+						<h3 class="pt-3 margin-bottom-20 tc-primary">Lorem ipsum dolor sit amet consectetur elit</h3>
+						<p class="pb-4 tc-primary">Integer vitae erat a nibh auctor tempor. Donec metus nibh,
+							condimentum
+							elementum leo in, vulputate scelerisque diam. Suspendisse sed mi interdum, dictum augue
+							consequat sapien.</p>
+						<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--KEYNOTE SPEAKER(S) #1-->
+		<section class="sec-pad-80" data-mod-name="Mod. Speaker #1" style="display:${speaker1Show};order:${speaker1Order};">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 width-1064">
+						<div class="rounded-30 bgc-lighter-grey padding-70" style="background-color:${speaker1BGColor};">
+							<div class="row align-items-center responsive-column-gap">
+								<div class="col-md-6 pe-lg-0">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-speaker-img-1.png"
+										width="460px" class="rounded-20 img-fluid mktoImg" id="speaker-mod-1-1"
+										mktoName="Image" alt="">
+								</div>
+								<div class="col-md-6 pad-left-80 d-flex flex-column mktoText" id="speaker-mod-1-2"
+									mktoName="Copy">
+									<h4 class="pb-3">Jordan Macintosh</h4>
+									<p class="tc-grey text-sm mb-1">Job title would go here</p>
+									<p class="tc-primary text-sm">Name of Company </p>
+									<div class="divider-light pt-4" style="border-color: #D6D6D6;">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat
+											nibh
+											velit laoreet hendrerit. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--KEYNOTE SPEAKER(S) #2-->
+		<section class="sec-pad-80 bgc-lighter-grey" data-mod-name="Mod. Speaker #2" style="display:${speaker2Show};background-color:${speaker2BGColor};order:${speaker2Order};">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="width-1064">
+						<div class="grid-2-box">
+							<div class="rounded-30 bgc-white padding-50 text-center mktoText" id="speaker-mod-2-1"
+								mktoName="Speaker #1">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-2.png"
+									width="430px" class="rounded-20 pb-4 img-fluid" alt="">
+								<h4 class="pb-3">Stephanie Chute</h4>
+								<p class="tc-grey text-sm mb-1">Job title would go here</p>
+								<p class="tc-primary text-sm">Name of Company </p>
+							</div>
+							<div class="rounded-30 bgc-white padding-50 text-center mktoText" id="speaker-mod-2-2"
+								mktoName="Speaker #1">
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-3.png"
+									width="430px" class="rounded-20 pb-4 img-fluid" alt="">
+								<h4 class="pb-3">Jeremy Kastinakis</h4>
+								<p class="tc-grey text-sm mb-1">Job title would go here</p>
+								<p class="tc-primary text-sm">Name of Company </p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--KEYNOTE SPEAKER(S) #3-->
+		<section class="sec-pad-80" data-mod-name="Mod. Speaker #3" style="display:${speaker3Show};background-color:${speaker3BGColor};order:${speaker3Order};">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="grid-3-box">
+							<div class="rounded-30 bgc-lighter-grey padding-50 text-center mktoText"
+								id="speaker-mod-3-1" mktoName="Speaker #1">
+								<h4 class="pb-3">Anna Malinowsky</h4>
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-4.png"
+									width="350px" class="rounded-20 pb-3 img-fluid" alt="">
+								<p class="tc-grey text-sm mb-1">Job title would go here</p>
+								<p class="tc-primary text-sm">Name of Company </p>
+							</div>
+							<div class="rounded-30 bgc-lighter-grey padding-50 text-center mktoText"
+								id="speaker-mod-3-2" mktoName="Speaker #2">
+								<h4 class="pb-3">Jeremy Kastinakis</h4>
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-6.png"
+									width="350px" class="rounded-20 pb-3 img-fluid" alt="">
+								<p class="tc-grey text-sm mb-1">Job title would go here</p>
+								<p class="tc-primary text-sm">Name of Company </p>
+							</div>
+							<div class="rounded-30 bgc-lighter-grey padding-50 text-center mktoText"
+								id="speaker-mod-3-3" mktoName="Speaker #3">
+								<h4 class="pb-3">Shelby Gunderson</h4>
+								<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-5.png"
+									width="350px" class="rounded-20 pb-3 img-fluid" alt="">
+								<p class="tc-grey text-sm mb-1">Job title would go here</p>
+								<p class="tc-primary text-sm">Name of Company </p>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Agenda #1-->
+		<section class="sec-pad-80" data-mod-name="Mod. Agenda #1" style="display:${agenda1Show};background-color:${agenda1BGColor};order:${agenda1Order};">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+					<div class="width-704 p-md-0 mktoText" id="agenda-mod-1-1" mktoName="Headline">
+						<h3 class="text-center">Overview massa nisl, euismod semper dolor imperdiet laoreet</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mktoText" id="agenda-mod-1-2" mktoName="Adenda Table">
+						<table class="table">
+							<tr>
+								<td width="30%">
+									<p class="title-sm"><b>9–10am</b></p>
+								</td>
+								<td width="70%">
+									<div class="d-flex justify-content-end">
+										<div class="width-884">
+											<p class="title-sm">Dolor sit amet consecteteur quad adipiscing. </p>
+											<p class="text-sm">Lorem ipsum dolor sit amet, rhoncusio consectetur
+												adipiscing
+												elit. Phasellus placerat nibh velit. </p>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td width="30%">
+									<p class="title-sm"><b>10:15am–12pm</b></p>
+								</td>
+								<td width="70%">
+									<div class="d-flex justify-content-end">
+										<div class="width-884">
+											<p class="title-sm">Dolor sit amet consecteteur quad adipiscing. </p>
+											<p class="text-sm">Lorem ipsum dolor sit amet, rhoncusio consectetur
+												adipiscing
+												elit. Phasellus placerat nibh velit. </p>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td width="30%">
+									<p class="title-sm"><b>12-1PM</b></p>
+								</td>
+								<td width="70%">
+									<div class="d-flex justify-content-end">
+										<div class="width-884">
+											<p class="title-sm">Lunch</p>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td width="30%">
+									<p class="title-sm"><b>1:15–3pm</b></p>
+								</td>
+								<td width="70%">
+									<div class="d-flex justify-content-end">
+										<div class="width-884">
+											<p class="title-sm">Dolor sit amet consecteteur quad adipiscing. </p>
+											<p class="text-sm">Lorem ipsum dolor sit amet, rhoncusio consectetur
+												adipiscing
+												elit. Phasellus placerat nibh velit. </p>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Agenda #2-->
+		<section class="bgc-lighter-grey sec-pad-80" data-mod-name="Mod. Agenda #2" style="display:${agenda2Show};background-color:${agenda2BGColor};order:${agenda2Order};">
+			<div class="container">
+				<div class="row pb-5">
+					<div class="width-704 mktoText" id="agenda-mod-2-1" mktoName="Headline">
+						<h3>Overview</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mktoText" id="agenda-mod-2-2" mktoName="Adenda Table">
+						<table class="table agenda-table-portrait">
+							<tr>
+								<td width="20%">
+									<p class="title-sm"><b>9–10AM</b></p>
+								</td>
+								<td width="65%">
+									<div class="d-flex justify-content-end">
+										<div class="width-884">
+											<p class="title-sm">Dolor sit amet consecteteur quad adipiscing. </p>
+											<p class="text-sm">Lorem ipsum dolor sit amet, rhoncusio consectetur
+												adipiscing
+												elit. Phasellus placerat nibh velit. </p>
+										</div>
+									</div>
+								</td>
+								<td width="15%" class="text-md-end agenda-portrait-img">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-6.png"
+										alt="">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-4.png"
+										alt="">
+								</td>
+							</tr>
+							<tr>
+								<td width="20%">
+									<p class="title-sm"><b>10:15AM–12PM</b></p>
+								</td>
+								<td width="65%">
+									<div class="d-flex justify-content-end">
+										<div class="width-884">
+											<p class="title-sm">Dolor sit amet consecteteur quad adipiscing. </p>
+											<p class="text-sm">Lorem ipsum dolor sit amet, rhoncusio consectetur
+												adipiscing
+												elit. Phasellus placerat nibh velit. </p>
+										</div>
+									</div>
+								</td>
+								<td width="15%" class="text-md-end agenda-portrait-img">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-5.png"
+										alt="">
+								</td>
+							</tr>
+							<tr>
+								<td width="20%">
+									<p class="title-sm"><b>12–1PM</b></p>
+								</td>
+								<td width="65%">
+									<div class="d-flex justify-content-end">
+										<div class="width-884">
+											<p class="title-sm">Lunch break. </p>
+
+										</div>
+									</div>
+								</td>
+								<td width="15%" class="text-md-end agenda-portrait-img">
+
+								</td>
+							</tr>
+							<tr>
+								<td width="20%">
+									<p class="title-sm"><b>1:15–3PM</b></p>
+								</td>
+								<td width="65%">
+									<div class="d-flex justify-content-end">
+										<div class="width-884">
+											<p class="title-sm">Mauris et turpis, rhoncus tortor ullamcorper.</p>
+											<p class="text-sm">Lorem ipsum dolor sit amet, rhoncusio consectetur
+												adipiscing
+												elit. Phasellus placerat nibh velit. </p>
+										</div>
+									</div>
+								</td>
+								<td width="15%" class="text-md-end agenda-portrait-img">
+									<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opd-lp-speaker-img-2.png"
+										alt="">
+								</td>
+							</tr>
+
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [Featured Blog] Featured Blog #1 -->
+		<section class="blog-sec sec-pad-80" data-mod-name="Mod. Blog #1" style="display:${blog1Show};background-color:${blog1BGColor};order:${blog1Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mktoText" id="blog-mod-1-1" mktoName="Headline">
+							<h3 class="pb-5 text-center">Rhoncus tortor hendrerit lorem</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="blog-content-wrapper mktoText" id="blog-mod-1-2" mktoName="Blog #1">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-blog-img-1.png"
+								width="100%" class="img-fluid" alt="">
+							<div class="blog-copy">
+								<p class="title-sm pb-2">Phasellus placerat dolor tortor nibh velit turpis.</p>
+								<p class="text-sm pb-4">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper
+									laoreet…
+								</p>
+								<a class="cta-link" href="#" target="_blank">Call to Action</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="blog-content-wrapper mktoText" id="blog-mod-1-3" mktoName="Blog #2">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-blog-img-2.png"
+								class="img-fluid" alt="">
+							<div class="blog-copy">
+								<p class="title-sm pb-2">Phasellus placerat dolor tortor nibh velit turpis.</p>
+								<p class="text-sm pb-4">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper
+									laoreet…
+								</p>
+								<a class="cta-link" href="#" target="_blank">Call to Action</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="blog-content-wrapper mktoText" id="blog-mod-1-4" mktoName="Blog #3">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-blog-img-3.png"
+								class="img-fluid" alt="">
+							<div class="blog-copy">
+								<p class="title-sm pb-2">Phasellus placerat dolor tortor nibh velit turpis.</p>
+								<p class="text-sm pb-4">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper
+									laoreet…
+								</p>
+								<a class="cta-link" href="#" target="_blank">Call to Action</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- [Featured Blog] Featured Blog #2 -->
+		<section class="blog-sec sec-pad-80" data-mod-name="Mod. Blog #2" style="display:${blog2Show};background-color:${blog2BGColor};order:${blog2Order};">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mktoText" id="blog-mod-2-1" mktoName="Headline">
+							<h3 class="pb-5 text-center">Rhoncus tortor hendrerit lorem</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="blog-content-wrapper borderless mktoText" id="blog-mod-2-2" mktoName="Blog #1">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-blog-img-1.png"
+								class="img-fluid" alt="">
+							<div class="blog-copy">
+								<p class="title-sm pb-2">Phasellus placerat dolor tortor nibh velit turpis.</p>
+								<p class="text-sm pb-4">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper
+									laoreet…
+								</p>
+								<a class="cta-link" href="#" target="_blank">Call to Action</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="blog-content-wrapper borderless mktoText" id="blog-mod-2-3" mktoName="Blog #2">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-blog-img-2.png"
+								class="img-fluid" alt="">
+							<div class="blog-copy">
+								<p class="title-sm pb-2">Phasellus placerat dolor tortor nibh velit turpis.</p>
+								<p class="text-sm pb-4">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper
+									laoreet…
+								</p>
+								<a class="cta-link" href="#" target="_blank">Call to Action</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="blog-content-wrapper borderless mktoText" id="blog-mod-2-4" mktoName="Blog #3">
+							<img src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-lp-blog-img-3.png"
+								class="img-fluid" alt="">
+							<div class="blog-copy">
+								<p class="title-sm pb-2">Phasellus placerat dolor tortor nibh velit turpis.</p>
+								<p class="text-sm pb-4">Mauris et turpis faucibus, rhoncus tortor at, ullamcorper
+									laoreet…
+								</p>
+								<a class="cta-link" href="#" target="_blank">Call to Action</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [INLINE FORM] Form #1 -->
+		<section class="form-sec-1 sec-pad-80" data-mod-name="Mod. Form #1" style="display:${form1Show};background-color:${form1BGColor};order:${form1Order};">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 d-flex justify-content-center">
+						<div class="form-wrapper">
+							<div class="mktoText" id="form-mod-1-1" mktoName="Headline">
+								<h3 class="pb-4 text-center">Lorem ipsum dolor sit amet elit</h3>
+							</div>
+							<div class="mktoForm" id="form-mod-1-2" mktoName="Form">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- [INLINE FORM] Form #2 -->
+		<section class="form-sec-2 sec-pad-80" data-mod-name="Mod. Form #2" style="display:${form2Show};background-color:${form2BGColor};order:${form2Order};">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 d-flex justify-content-center">
+						<div class="form-wrapper">
+							<div class="row">
+								<div class="col-md-5 d-flex flex-column justify-content-between mktoText"
+									id="form-mod-2-1" mktoName="Copy">
+									<div class="form-content">
+										<p class="subhead-text">LOREM IPSUM</p>
+										<h3 class="pb-3">Pellentesque habitant morbi tristique senectus</h3>
+										<p>Donec metus nibh, condimentum elementum vulputate scelerisque.</p>
+									</div>
+									<p class="text-xsm">By clicking “Submit” I hereby confirm that the information I
+										have
+										supplied is true, accurate, and complete. Privacy Policy. </p>
+								</div>
+								<div class="col-md-7">
+									<div class="mktoForm" id="form-mod-2-2" mktoName="Form">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- [INLINE FORM] Form #3 -->
+		<section class="form-sec-3 sec-pad-100 sec-margin-80" data-mod-name="Mod. Form #3" style="display:${form3Show};background-color:${form3BGColor};background-image:url('${form3BGImage}');order:${form3Order};">
+			<div class="container">
+				<div class="row responsive-column-gap">
+					<div class="col-md-6 mktoText" id="form-mod-3-1" mktoName="Copy">
+						<p class="subhead-text text-white">LOREM IPSUM</p>
+						<h2 class="pb-3 text-white">Lorem ipsum
+							dolor sit amet consectetur elit</h2>
+						<p class="text-white pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							placerat nibh velit laoreet hendrerit. Mauris et turpis faucibus, rhoncus tortor at,
+							ullamcorper. Aliquam pretium scelerisque.</p>
+						<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+					</div>
+					<div class="col-md-6 pad-left-80">
+						<div class="rounded-30 padding-70 bgc-lighter-grey">
+							<div class="mktoForm" id="form-mod-3-2" mktoName="Form">
+								
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Thank You #1 -->
+	<section class="thank-you-sec sec-pad-100" data-mod-name="Mod. Thank You #1" style="display:${ty1Show};">
+		<div class="container">
+				<div class="row responsive-column-gap align-items-center">
+					<div class="col-md-6 pe-md-5 mktoText" id="ty-mod-1-1" mktoName="Copy">
+						<p class="subhead-text">Lorem Ipsum</p>
+						<h2 class="pb-3 tc-primary"><span style="color: #0033CC;">Thank you</span> lorem dolor sit amet
+							consectetur elit</h2>
+						<p class="pb-4 tc-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							placerat nibh velit laoreet hendrerit. Mauris et turpis faucibus, rhoncus tortor at,
+							ullamcorper. Aliquam pretium scelerisque.</p>
+						<div class="d-flex gap-3 flex-wrap">
+							<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+							<a role="button" class="btn btn-primary btn-dark translucent" href="#" target="_blank">Call
+								to Action </a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img class="img-fluid mktoImg" id="ty-mod-1-2" mktoName="Image"
+							src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opdp-lp-ty-1.png"
+							width="100%" alt="" srcset="">
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- Thank You #2 -->
+	<section class="thank-you-sec sec-pad-100" data-mod-name="Mod. Thank You #2" style="display:${ty2Show};">
+		<div class="container">
+				<div class="row responsive-column-gap align-items-center">
+					<div class="col-md-6">
+						<img class="img-fluid mktoImg" id="ty-mod-2-1" mktoName="Image"
+							src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/opdp-lp-ty-2.png"
+							width="100%" alt="" srcset="">
+					</div>
+					<div class="col-md-6 ps-md-5 mktoText" id="ty-mod-2-2" mktoName="Copy">
+						<p class="subhead-text">Lorem Ipsum</p>
+						<h2 class="pb-3 tc-primary"><span style="color: #0033CC;">Thank you</span> lorem dolor sit amet
+							consectetur elit</h2>
+						<p class="pb-4 tc-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+							placerat nibh velit laoreet hendrerit. Mauris et turpis faucibus, rhoncus tortor at,
+							ullamcorper. Aliquam pretium scelerisque.</p>
+						<div class="d-flex gap-3 flex-wrap">
+							<a role="button" class="btn btn-primary" href="#" target="_blank">Call to Action </a>
+							<a role="button" class="btn btn-primary btn-dark translucent" href="#" target="_blank">Call
+								to Action </a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- Footer #1 -->
+	<section class="bgc-primary footer-sec" style="display:${footer1Show};">
+		<div class="container d-flex flex-column justify-content-between flex-grow-1">
+			<div class="row pb-5">
+				<div class="col-12 d-flex flex-wrap gap-5 justify-content-between">
+					<div class="mktoText" id="footer-mod-1-1" mktoName="Logo">
+						<a href="https://www.odpbusiness.com/" target="_blank"></a><img class="header-logo img-fluid"
+							src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-logo.png"
+							alt="ODP Business Solutions logo" width="176px" height="auto">
+					</div>
+					<div class="mktoText" id="footer-mod-1-2" mktoName="Social">
+						<p class="subhead-text text-white pb-2">Follow Us</p>
+						<div class="d-flex gap-3 justify-content-center">
+							<a href="https://www.linkedin.com/company/odp-business-solutions/?SID=null" title="LinkedIn"
+								target="_blank" aria-label="LinkedIn"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-linkedin-icon-yellow.png"
+									alt="" width="46" height="46" loading="lazy"></a>
+							<a href="https://www.facebook.com/ODPBusinessSolutions?SID=null" title="Twitter"
+								target="_blank" aria-label="Twitter"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-facebook-icon-yellow.png"
+									alt="" width="46" height="46" loading="lazy"></a>
+							<a href="https://www.instagram.com/odpbusiness/?SID=null&amp;odserver=www.odpbusiness.com"
+								title="Instagram" target="_blank" aria-label="Instagram"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-youtube-icon-yellow.png"
+									alt="" width="46" height="46" loading="lazy"></a>
+							<a href="https://www.youtube.com/c/ODPBusinessSolutions?SID=null&amp;odserver=www.odpbusiness.com"
+								title="YouTube" target="_blank" aria-label="YouTube"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-instagram-icon-yellow.png"
+									alt="" width="46" height="46" loading="lazy"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pb-5">
+				<div class="col-md-12 mktoText" id="footer-mod-1-3" mktoName="Copy" style="max-width: 640px;">
+					<p class="title-sm tc-secondary">Supporting your business, is our business.</p>
+					<p class="text-sm text-white mb-0">We are in the business of making your business easier to manage.
+						ODP Business Solutions® brings over 30 years of experience and an array of cost-saving solutions
+						to help your business thrive. </p>
+				</div>
+			</div>
+			<div class="row gy-4 align-items-end">
+				<div class="col-lg-10 pe-lg-5 mktoText" id="footer-mod-1-4" mktoName="Copy">
+					<div class="footer-nav-menu pb-3">
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/prelogin/terms-of-use?cm_sp=footer-_-company-info-_-terms-of-use"
+							target="_blank">Privacy Policy</a>
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/prelogin/privacy-policy?cm_sp=footer-_-company-info-_-privacy-policy"
+							target="_blank">Terms of Use</a>
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/prelogin/terms-and-conditions?cm_sp=footer-_-company-info-_-terms-and-conditions"
+							target="_blank">Terms & Conditions</a>
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/help/website-accessibility&cm_sp=footer-_-access_accessibility"
+							target="_blank">Accessibility</a>
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/prelogin/tracking-tools?cm_sp=footer-_-company-info-_-tracking-tools"
+							target="_blank">Online Tracking Tools</a>
+						<a class="nav-item" href="https://www.odpbusiness.com/l/prelogin/data-compliance"
+							target="_blank">Data Security Compliance</a>
+					</div>
+					<p class="text-xsm text-white">Copyright © ODP Business Solutions, LLC. All rights reserved. All use
+						of this site is subset to the <a
+							href="https://www.odpbusiness.com/l/prelogin/terms-of-use?cm_sp=footer-_-company-info-_-terms-of-use"
+							style="color:#20C4F4;">Terms of Use.</a> </p>
+				</div>
+				<div class="col-lg-2 mktoText" id="footer-mod-1-5" mktoName="Copy">
+					<p class="text-16px tc-secondary bolder mb-0">Customer Service</p>
+					<p class="text-16px"><a class="text-16px" href="tel:1.888.263.3423"
+							style="color:#20C4F4;font-weight: 500;text-decoration: none;">1.888.263.3423</a></p>
+					<p class="pt-2 text-16px tc-secondary bolder mb-0">SMS Support</p>
+					<p class="text-16px text-white" style="font-weight: 500;">Text <span
+							style="color:#20C4F4;">"HELP"</span> to 91958</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer #1 -->
+	<section class="bg-white footer-sec" style="display:${footer2Show};">
+		<div class="container d-flex flex-column justify-content-between flex-grow-1">
+			<div class="row pb-5">
+				<div class="col-12 d-flex flex-wrap gap-5 justify-content-between">
+					<div class="mktoText" id="footer-mod-2-1" mktoName="Logo">
+						<a href="https://www.odpbusiness.com/" target="_blank"></a><img class="header-logo img-fluid"
+							src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-logo-dark.png"
+							alt="ODP Business Solutions logo" width="176px" height="auto">
+					</div>
+					<div class="mktoText" id="footer-mod-2-2" mktoName="Social">
+						<p class="subhead-text pb-2">Follow Us</p>
+						<div class="d-flex gap-3 justify-content-center">
+							<a href="https://www.linkedin.com/company/odp-business-solutions/?SID=null" title="LinkedIn"
+								target="_blank" aria-label="LinkedIn"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-linkedin-icon-light-gray.png"
+									alt="" width="46" height="46" loading="lazy"></a>
+							<a href="https://www.facebook.com/ODPBusinessSolutions?SID=null" title="Twitter"
+								target="_blank" aria-label="Twitter"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-facebook-icon-light-gray.png"
+									alt="" width="46" height="46" loading="lazy"></a>
+							<a href="https://www.instagram.com/odpbusiness/?SID=null&amp;odserver=www.odpbusiness.com"
+								title="Instagram" target="_blank" aria-label="Instagram"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-youtube-icon-light-gray.png"
+									alt="" width="46" height="46" loading="lazy"></a>
+							<a href="https://www.youtube.com/c/ODPBusinessSolutions?SID=null&amp;odserver=www.odpbusiness.com"
+								title="YouTube" target="_blank" aria-label="YouTube"><img
+									src="https://odpbs-mkt-lp.odpbusiness.com/rs/498-UPI-364/images/odp-instagram-icon-light-gray.png"
+									alt="" width="46" height="46" loading="lazy"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pb-5">
+				<div class="col-md-12 mktoText" id="footer-mod-2-3" mktoName="Copy" style="max-width: 640px;">
+					<p class="title-sm tc-primary">Supporting your business, is our business.</p>
+					<p class="text-sm mb-0">We are in the business of making your business easier to manage.
+						ODP Business Solutions® brings over 30 years of experience and an array of cost-saving solutions
+						to help your business thrive. </p>
+				</div>
+			</div>
+			<div class="row gy-4 align-items-end">
+				<div class="col-lg-10 pe-lg-5 mktoText" id="footer-mod-2-4" mktoName="Copy">
+					<div class="footer-nav-menu copy-dark pb-3">
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/prelogin/terms-of-use?cm_sp=footer-_-company-info-_-terms-of-use"
+							target="_blank">Privacy Policy</a>
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/prelogin/privacy-policy?cm_sp=footer-_-company-info-_-privacy-policy"
+							target="_blank">Terms of Use</a>
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/prelogin/terms-and-conditions?cm_sp=footer-_-company-info-_-terms-and-conditions"
+							target="_blank">Terms & Conditions</a>
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/help/website-accessibility&cm_sp=footer-_-access_accessibility"
+							target="_blank">Accessibility</a>
+						<a class="nav-item"
+							href="https://www.odpbusiness.com/l/prelogin/tracking-tools?cm_sp=footer-_-company-info-_-tracking-tools"
+							target="_blank">Online Tracking Tools</a>
+						<a class="nav-item" href="https://www.odpbusiness.com/l/prelogin/data-compliance"
+							target="_blank">Data Security Compliance</a>
+					</div>
+					<p class="text-xsm">Copyright © ODP Business Solutions, LLC. All rights reserved. All use
+						of this site is subset to the <a
+							href="https://www.odpbusiness.com/l/prelogin/terms-of-use?cm_sp=footer-_-company-info-_-terms-of-use"
+							style="color:#0033CC;">Terms of Use.</a> </p>
+				</div>
+				<div class="col-lg-2 mktoText" id="footer-mod-2-5" mktoName="Copy">
+					<p class="text-16px tc-primary bolder mb-0">Customer Service</p>
+					<p class="text-16px"><a class="text-16px" href="tel:1.888.263.3423"
+							style="color:#0033CC;font-weight: 500;text-decoration: none;">1.888.263.3423</a></p>
+					<p class="pt-2 text-16px tc-primary bolder mb-0">SMS Support</p>
+					<p class="text-16px" style="font-weight: 500;">Text <span style="color:#0033CC;">"HELP"</span> to
+						91958</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+	</script>
+
+</body>
+
+</html>
